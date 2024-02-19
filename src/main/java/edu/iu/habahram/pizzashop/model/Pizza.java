@@ -15,7 +15,7 @@ public abstract class Pizza {
     abstract void prepare();
 
     void bake() {
-        state.append("Bake for 25 minutes at 350");
+        state.append("Baked for 25 minutes at 350");
         state.append("\n");
     }
 
@@ -25,7 +25,7 @@ public abstract class Pizza {
     }
 
     void box() {
-        state.append("Place pizza in official PizzaStore box");
+        state.append("Placed pizza in official PizzaStore box");
         state.append("\n");
     }
 
@@ -69,7 +69,7 @@ public abstract class Pizza {
             result.append(pepperoni);
             result.append("\n");
         }
-        return result.toString();
+        return result.toString() + state.toString();
     }
 }
 
